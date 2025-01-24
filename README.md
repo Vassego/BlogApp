@@ -23,10 +23,17 @@ The MERN Blog Website is a modern, full-stack web application designed to provid
     cd backend
     ```
 5. ** create a `.env` file**
+
+   
 6.**specify the MONGO_URL variable**
    example->  MONGO_URL=your_mongodb_connection_string
-      
-7.**Open your browser and navigate to:**
+
+7.**Start running the website**
+   ```bash
+    npm start
+   ```
+  
+8.**Open your browser and navigate to:**
     ```bash
     http://localhost:3000
     ```
