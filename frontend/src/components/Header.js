@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../index.css"; // Ensure this file contains the font import
+import "../index.css";
 import {
   Box,
   AppBar,
@@ -40,8 +40,8 @@ const Header = () => {
           <Typography
             variant="h4"
             sx={{
-              fontFamily: "Leckerli One, cursive", // Use the font directly here
-              color: "white", // Set text color if needed
+              fontFamily: "Leckerli One, cursive", 
+              color: "white",
             }}
           >
             Blog-App

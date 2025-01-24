@@ -5,34 +5,31 @@
   box-sizing: border-box;
 }
 
-/* Body styling */
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #1e1e2f; /* Dark purple/black background */
-  color: #f2e7fe; /* Light purple text */
+  background-color: #1e1e2f;
+  color: #f2e7fe; 
   line-height: 1.6;
 }
 
-/* Header and main titles */
 h1, h2, h3, h4, h5, h6 {
-  color: #e0b3ff; /* Soft purple */
+  color: #e0b3ff; 
 }
 
-/* Links */
 a {
-  color: #ff79c6; /* Pink */
+  color: #ff79c6; 
   text-decoration: none;
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #bd93f9; /* Light purple */
+  color: #bd93f9; 
 }
 
-/* Buttons */
+
 button {
-  background-color: #8d38f5; /* Vibrant purple */
-  color: #ffffff; /* White text */
+  background-color: #8d38f5; 
+  color: #ffffff; 
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -42,22 +39,20 @@ button {
 }
 
 button:hover {
-  background-color: #caa0f5; /* Lighter purple */
+  background-color: #caa0f5; 
 }
 
-/* Blog container */
 .blog-container {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #2e2e3e; /* Darker purple */
+  background-color: #2e2e3e; 
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Blog cards */
 .blog-card {
-  background-color: #3d3d5c; /* Medium purple */
+  background-color: #3d3d5c; 
   margin: 15px 0;
   padding: 15px;
   border-radius: 10px;
@@ -70,47 +65,42 @@ button:hover {
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Blog titles */
 .blog-title {
   font-size: 24px;
-  color: #f8c8dc; /* Soft pink */
+  color: #f8c8dc; 
   margin-bottom: 10px;
 }
 
-/* Blog text */
 .blog-description {
   font-size: 16px;
-  color: #e0e0e0; /* Light gray */
+  color: #e0e0e0; 
 }
 
-/* Input fields */
 input, textarea {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #8d38f5; /* Purple border */
+  border: 1px solid #8d38f5; 
   border-radius: 5px;
-  background-color: #2e2e3e; /* Darker purple */
-  color: #f2e7fe; /* Light purple text */
+  background-color: #2e2e3e; 
+  color: #f2e7fe; 
 }
 
 input:focus, textarea:focus {
   outline: none;
-  border-color: #caa0f5; /* Lighter purple */
+  border-color: #caa0f5; 
   box-shadow: 0px 0px 5px #caa0f5;
 }
 
-/* Updating .displaying-texts class */
 .displaying-texts {
-  background-color: #8d38f5; /* Vibrant purple */
-  color: #ffffff; /* White text */
+  background-color: #8d38f5; 
+  color: #ffffff; 
   padding: 15px;
   border-radius: 5px;
   font-size: 18px;
   text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
-/* Login.css */
 .login-container {
   max-width: 450px;
   display: flex;

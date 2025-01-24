@@ -4,8 +4,8 @@ import BlogCard from "../components/BlogCard";
 
 const UserBlogs = () => {
   const [blogs, setBlogs] = useState([]);
-  const [loading, setLoading] = useState(true); // State to manage loading status
-  const [error, setError] = useState(null); // State to manage error
+  const [loading, setLoading] = useState(true); 
+  const [error, setError] = useState(null); 
 
   const getUserBlogs = async () => {
     try {
@@ -14,29 +14,29 @@ const UserBlogs = () => {
       if (data?.success) {
         setBlogs(data?.userBlog.blogs);
       } else {
-        setError("Failed to fetch user blogs."); // Handle case where success is false
+        setError("Failed to fetch user blogs."); 
       }
     } catch (error) {
       console.log(error);
-      setError("An error occurred while fetching your blogs."); // Set error message
+      setError("An error occurred while fetching your blogs."); 
     } finally {
-      setLoading(false); // Set loading to false after fetching
+      setLoading(false); 
     }
   };
 
   useEffect(() => {
-    getUserBlogs(); // Fetch user blogs when the component mounts
+    getUserBlogs();
   }, []);
 
   return (
     <div>
-      {loading ? ( // Show loading message while fetching
+      {loading ? ( 
         <p className="displaying-texts">Loading...</p>
-      ) : error ? ( // Show error message if there was an error
+      ) : error ? ( 
         <p className="displaying-texts" style={{ color: "red" }}>
           {error}
         </p>
-      ) : blogs.length > 0 ? ( // Check if user blogs exist
+      ) : blogs.length > 0 ? (
         blogs.map((blog) => (
           <BlogCard
             key={blog._id}
@@ -50,7 +50,7 @@ const UserBlogs = () => {
           />
         ))
       ) : (
-        <h1 className="message">You Haven't Created a Blog</h1> // Message if no blogs exist
+        <h1 className="message">You Haven't Created a Blog</h1> 
       )}
     </div>
   );

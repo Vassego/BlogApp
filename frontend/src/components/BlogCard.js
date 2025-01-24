@@ -40,10 +40,10 @@ export default function BlogCard({ title, description, image, time, id, isUser ,
         mt: 2,
         padding: 2,
         borderRadius: "10px",
-        backgroundColor: "#2e2e3e", // Dark background for the card
-        boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.6)", // Darker shadow
+        backgroundColor: "#2e2e3e", 
+        boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.6)", 
         ":hover": {
-          boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.8)", // Darker hover effect
+          boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.8)", 
         },
       }}
     >
@@ -59,22 +59,21 @@ export default function BlogCard({ title, description, image, time, id, isUser ,
       )}
       <CardHeader
         avatar={
-          // Avatar without username, showing default letter "A"
           <Avatar sx={{ bgcolor: red[500], color: "#fff" }} aria-label="recipe">
-            {username ? username.charAt(0).toUpperCase() : "A"} {/* Display first letter of username */}
+            {username ? username.charAt(0).toUpperCase() : "A"} 
           </Avatar>
         }
-        title={<Typography variant="h6" color="#f8c8dc">{username || "Anonymous"}</Typography>} // Displaying username or "Anonymous"
+        title={<Typography variant="h6" color="#f8c8dc">{username || "Anonymous"}</Typography>} 
         subheader={<Typography variant="body2" color="#f2e7fe">{time}</Typography>}
         sx={{
-          backgroundColor: "#3d3d5c", // Darker background for header
+          backgroundColor: "#3d3d5c", 
           borderRadius: "5px",
           padding: "10px",
         }}
       />
       <CardMedia component="img" height="200" image={image} alt="Blog image" sx={{ borderRadius: "5px" }} />
       <CardContent sx={{ padding: "10px", color: "#e0e0e0" }}>
-        <Typography variant="h6" color="#f8c8dc"> {/* Soft pink for the title */}
+        <Typography variant="h6" color="#f8c8dc"> 
           Title: {title}
         </Typography>
         <Typography variant="body2" color="#e0e0e0">

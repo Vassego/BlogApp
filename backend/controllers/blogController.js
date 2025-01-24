@@ -4,7 +4,7 @@ import userModel from "../models/userModel.js";
 
 export async function getAllBlogsController(req, res) {
   try {
-    const blogs = await blogModel.find({}).populate("user", "username"); // Populate user with username
+    const blogs = await blogModel.find({}).populate("user", "username"); 
     if (!blogs.length) {
       return res.status(200).send({
         success: false,
@@ -157,8 +157,8 @@ export async function userBlogController(req, res) {
     const userBlog = await userModel.findById(req.params.id).populate({
       path: 'blogs',
       populate: {
-        path: 'user', // Populate the user field in each blog
-        select: 'username' // Only select the username field
+        path: 'user', 
+        select: 'username' 
       }
     });
     

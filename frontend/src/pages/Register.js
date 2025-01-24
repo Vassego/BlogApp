@@ -11,16 +11,12 @@ const Register = () => {
     email: "",
     password: "",
   });
-
-  // Handle input change
   const handleChange = (e) => {
     setInputs((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
     }));
   };
-
-  // Form handle
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -48,17 +44,17 @@ const Register = () => {
         padding={3}
         margin="auto"
         marginTop="30px"
-        boxShadow={"0px 4px 20px rgba(0, 0, 0, 0.6)"} // Darker shadow
+        boxShadow={"0px 4px 20px rgba(0, 0, 0, 0.6)"} 
         display="flex"
         flexDirection={"column"}
-        backgroundColor="#2e2e3e" // Darker background to match your theme
+        backgroundColor="#2e2e3e" 
       >
         <Typography
           variant="h2"
           textAlign={"center"}
           fontWeight="bold"
           padding={3}
-          color="#f8c8dc" // Light purple text for better contrast
+          color="#f8c8dc"
         >
           Register
         </Typography>
@@ -74,17 +70,17 @@ const Register = () => {
             "& .MuiOutlinedInput-root": {
               borderRadius: "20px",
               backgroundColor: "#2e2e3e",
-              borderColor: "#8d38f5", // Purple border
-              color: "#f2e7fe", // Light text color
+              borderColor: "#8d38f5",
+              color: "#f2e7fe", 
             },
             "& .MuiInputLabel-root": {
-              color: "#f2e7fe", // Light purple label
+              color: "#f2e7fe", 
               fontWeight: "bold",
             },
             "& .MuiOutlinedInput-root.Mui-focused": {
-              borderColor: "#caa0f5", // Lighter purple on focus
+              borderColor: "#caa0f5", 
             },
-            width: "100%", // Full width
+            width: "100%", 
           }}
         />
         <TextField
@@ -109,7 +105,7 @@ const Register = () => {
             "& .MuiOutlinedInput-root.Mui-focused": {
               borderColor: "#caa0f5",
             },
-            width: "100%", // Full width
+            width: "100%", 
           }}
         />
         <TextField

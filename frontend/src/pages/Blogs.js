@@ -4,8 +4,8 @@ import BlogCard from "../components/BlogCard";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
-  const [loading, setLoading] = useState(true); // State to manage loading status
-  const [error, setError] = useState(null); // State to manage error
+  const [loading, setLoading] = useState(true); 
+  const [error, setError] = useState(null); 
 
   const getAllBlogs = async () => {
     try {
@@ -13,13 +13,13 @@ const Blogs = () => {
       if (data?.success) {
         setBlogs(data?.blogs);
       } else {
-        setError("Failed to fetch blogs."); // Handle case where success is false
+        setError("Failed to fetch blogs."); 
       }
     } catch (error) {
       console.log(error);
-      setError("An error occurred while fetching blogs."); // Set error message
+      setError("An error occurred while fetching blogs."); 
     } finally {
-      setLoading(false); // Set loading to false after fetching
+      setLoading(false); 
     }
   };
 
@@ -29,13 +29,13 @@ const Blogs = () => {
 
   return (
     <div>
-      {loading ? ( // Show loading message while fetching
+      {loading ? ( 
         <p className="displaying-texts">Loading...</p>
-      ) : error ? ( // Show error message if there was an error
+      ) : error ? ( 
         <p className="displaying-texts" style={{ color: "red" }}>
           {error}
         </p>
-      ) : blogs.length > 0 ? ( // Check if blogs exist
+      ) : blogs.length > 0 ? ( 
         blogs.map((blog) => (
           <BlogCard
             key={blog?._id}

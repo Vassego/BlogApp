@@ -9,13 +9,11 @@ import toast from "react-hot-toast";
 const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  // State
   const [inputs, setInputs] = useState({
     email: "",
     password: "",
   });
 
-  // Handle input change
   const handleChange = (e) => {
     setInputs((prevState) => ({
       ...prevState,
@@ -23,7 +21,7 @@ const Login = () => {
     }));
   };
 
-  // Form handle
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -52,17 +50,17 @@ const Login = () => {
         padding={3}
         margin="auto"
         marginTop="30px"
-        boxShadow={"0px 4px 20px rgba(0, 0, 0, 0.6)"} // Darker shadow
+        boxShadow={"0px 4px 20px rgba(0, 0, 0, 0.6)"}
         display="flex"
         flexDirection={"column"}
-        backgroundColor="#2e2e3e" // Darker background to match your theme
+        backgroundColor="#2e2e3e" 
       >
         <Typography
           variant="h2"
           textAlign={"center"}
           fontWeight="bold"
           padding={3}
-          color="#f8c8dc" // Light purple text for better contrast
+          color="#f8c8dc"
         >
           Login
         </Typography>
@@ -79,17 +77,17 @@ const Login = () => {
             "& .MuiOutlinedInput-root": {
               borderRadius: "20px",
               backgroundColor: "#2e2e3e",
-              borderColor: "#8d38f5", // Purple border
-              color: "#f2e7fe", // Light text color
+              borderColor: "#8d38f5", 
+              color: "#f2e7fe", 
             },
             "& .MuiInputLabel-root": {
-              color: "#f2e7fe", // Light purple label
+              color: "#f2e7fe", 
               fontWeight: "bold",
             },
             "& .MuiOutlinedInput-root.Mui-focused": {
-              borderColor: "#caa0f5", // Lighter purple on focus
+              borderColor: "#caa0f5",
             },
-            width: "100%", // Full width
+            width: "100%",
           }}
         />
         <TextField
@@ -114,7 +112,7 @@ const Login = () => {
             "& .MuiOutlinedInput-root.Mui-focused": {
               borderColor: "#caa0f5",
             },
-            width: "100%", // Full width
+            width: "100%",
           }}
         />
 
@@ -123,10 +121,10 @@ const Login = () => {
           sx={{
             borderRadius: "20px",
             marginTop: "20px",
-            backgroundColor: "#8d38f5", // Vibrant purple button
-            color: "#ffffff", // White text
+            backgroundColor: "#8d38f5", 
+            color: "#ffffff", 
             "&:hover": {
-              backgroundColor: "#caa0f5", // Lighter purple on hover
+              backgroundColor: "#caa0f5", 
             },
           }}
           variant="contained"
@@ -138,8 +136,8 @@ const Login = () => {
           sx={{
             borderRadius: "20px",
             marginTop: "20px",
-            color: "#f2e7fe", // Light text color
-          }} // Match button color
+            color: "#f2e7fe", 
+          }} 
         >
           Not a user? Please Register
         </Button>
