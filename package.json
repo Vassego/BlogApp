@@ -1,0 +1,14 @@
+{
+  "name": "my-blog-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build":"cd backend && npm install && cd ../frontend && npm install",
+    "start": "start npm start --prefix frontend && npm start --prefix backend "
+  },
+  "keywords": [],
+  "author": "varun agarwal",
+  "license": "ISC",
+  "description": ""
+}

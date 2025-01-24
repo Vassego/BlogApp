@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Leckerli+One&family=Rubik+Bubbles&family=Vibur&display=swap');* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1e1e2f; /* Dark purple/black background */
+  color: #f2e7fe; /* Light purple text */
+  line-height: 1.6;
+}
+
+/* Header and main titles */
+h1, h2, h3, h4, h5, h6 {
+  color: #e0b3ff; /* Soft purple */
+}
+
+/* Links */
+a {
+  color: #ff79c6; /* Pink */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #bd93f9; /* Light purple */
+}
+
+/* Buttons */
+button {
+  background-color: #8d38f5; /* Vibrant purple */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #caa0f5; /* Lighter purple */
+}
+
+/* Blog container */
+.blog-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #2e2e3e; /* Darker purple */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Blog cards */
+.blog-card {
+  background-color: #3d3d5c; /* Medium purple */
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Blog titles */
+.blog-title {
+  font-size: 24px;
+  color: #f8c8dc; /* Soft pink */
+  margin-bottom: 10px;
+}
+
+/* Blog text */
+.blog-description {
+  font-size: 16px;
+  color: #e0e0e0; /* Light gray */
+}
+
+/* Input fields */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #8d38f5; /* Purple border */
+  border-radius: 5px;
+  background-color: #2e2e3e; /* Darker purple */
+  color: #f2e7fe; /* Light purple text */
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #caa0f5; /* Lighter purple */
+  box-shadow: 0px 0px 5px #caa0f5;
+}
+
+/* Updating .displaying-texts class */
+.displaying-texts {
+  background-color: #8d38f5; /* Vibrant purple */
+  color: #ffffff; /* White text */
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+/* Login.css */
+.login-container {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5%;
+  box-shadow: 10px 10px 20px #ccc;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.login-title {
+  text-transform: uppercase;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.login-input {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.login-btn {
+  border-radius: 3px;
+  margin-top: 1rem;
+}
+
+.register-btn {
+  border-radius: 3px;
+  margin-top: 1rem;
+  color: #007bff;
+  text-transform: none;
+}
+.fancy{
+  font-family: "Leckerli One", cursive; 
+}
+
+.message {
+  font-size: 24px; 
+  color: #fa06fe; 
+   margin-left: 540px;
+  margin-top: 20px; 
+  font-weight: bold;
+}
