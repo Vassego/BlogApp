@@ -54,7 +54,7 @@ The MERN Blog Website is a modern, full-stack web application designed to provid
     http://localhost:3000
     ```
 
-####Screenshots
+# Screenshots
 ![image](https://github.com/user-attachments/assets/2cdead32-8d5c-4894-9512-3b023748d14a)
 
 ![image](https://github.com/user-attachments/assets/05ac284b-0fac-4a80-acc5-fe3f13f470af)
